@@ -1,17 +1,17 @@
 package tp3;
 
-
 import java.util.Scanner;
+
+import tp3.auxiliar.Contante;
 
 public class tp3 {
 	
 	
 	private static String[] nomes;
-	private static float[] av1;
+	private static float[] av1; 
 	private static float[] av2;
 	private static float[] media;
 
-	private final static int qtde = 100;
 
 	
 	private static void impressao(int posicao) {
@@ -25,6 +25,8 @@ public class tp3 {
 				situacaoMedia(mediaTotal)
 			);
 	}
+	
+	
 	
 	private static String situacaoMedia(float media) {
         String result = "";
@@ -49,10 +51,10 @@ public class tp3 {
 	}
 	
 	public static void main(String[] args) {
-		nomes = new String[qtde];
-		av1 = new float[qtde];
-		av2 = new float[qtde];
-		media = new float[qtde];
+		nomes = new String[Contante.qtde];
+		av1 = new float[Contante.qtde];
+		av2 = new float[Contante.qtde];
+		media = new float[Contante.qtde];
 		
 		Scanner in = new Scanner(System.in);
 		
@@ -71,7 +73,7 @@ public class tp3 {
 
 			switch (opcao) {
 			case "1":
-				if(index < qtde) {
+				if(index < Contante.qtde) {
 					System.out.println("Nome do Aluno: ");
 					nomes[index] = in.next();
 	

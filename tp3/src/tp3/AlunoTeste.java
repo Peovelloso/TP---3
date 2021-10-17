@@ -1,6 +1,9 @@
 package tp3;
 
+import tp3.dominio.Aluno;
+
 public class AlunoTeste {
+	
 	
 	public static void main(String[] args) {
 		
