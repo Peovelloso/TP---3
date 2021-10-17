@@ -1,4 +1,4 @@
-package tp3;
+package pacote.Teste;
 
 import tp3.dominio.Aluno;
 
